@@ -96,3 +96,20 @@ console.log(calculatrice.darb(4 ,2))
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
