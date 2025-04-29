@@ -84,3 +84,6 @@ public function sound(){
     
   }
 }
+
+$test = new Male (2,"hamza","bkr");
+$test -> gender();
