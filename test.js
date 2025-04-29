@@ -22,7 +22,7 @@ const employees = [
       department: "Design",
       position: "UI/UX Designer",
       salary: 48000,
-      skills: ["Figma", "Adobe XD", "Photoshop", "User Research"],
+      skills: ["Figma", "JavaScript XD", "Photoshop", "User Research"],
       joinDate: "2020-02-10",
       email: "marie.martin@company.com",
       projects: ["Project Beta", "Project Gamma"],
@@ -37,7 +37,7 @@ const employees = [
       department: "Management",
       position: "Chef de projet",
       salary: 65000,
-      skills: ["Agile", "Scrum", "JIRA", "Project Planning"],
+      skills: ["Agile", "JavaScript", "JIRA", "Project Planning"],
       joinDate: "2017-11-22",
       email: "pierre.bernard@company.com",
       projects: ["Project Alpha", "Project Beta", "Project Delta"],
@@ -52,7 +52,7 @@ const employees = [
       department: "Développement",
       position: "Développeur Frontend",
       salary: 52000,
-      skills: ["React", "TypeScript", "CSS", "Jest"],
+      skills: ["React", "JavaScript", "CSS", "Jest"],
       joinDate: "2020-08-14",
       email: "thomas.petit@company.com",
       projects: ["Project Gamma", "Project Epsilon"],
@@ -747,8 +747,7 @@ const employees = [
       email: "sophie.leroy@company.com",
       projects: ["Project Epsilon"],
       isActive: false,
-      languages: ["French", "English", "Italian"]
+      languages: ["French"]
     }
   ];
-
-  
+ 
