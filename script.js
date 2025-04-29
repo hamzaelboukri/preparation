@@ -160,13 +160,66 @@
 
 
 
+const items = [
+    { category: 'fruit', name: 'apple' },
+    { category: 'fruit', name: 'banana' },
+    { category: 'vegetable', name: 'carrot' }
+  ];
+//   console.log(groupByCategory(items)); 
+//   { 
+// fruit: [{ category: 'fruit', name: 'apple' }, 
+//   { category: 'fruit', name: 'banana' }],
+//    vegetable: [{ category: 'vegetable', name: 'carrot' }] }
+
+
+
+function getfruit(array,keyword){
+    let fruit=[]
+    let vegetable=[]
+    let itemss=[]
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].category===keyword) {
+            fruit.push(array[i])
+        }
+        else{
+            vegetable.push(array[i])
+        }
+    }
+    itemss.push(fruit,vegetable)
+   return itemss ;
+}
+console.log(getfruit(items,"fruit"))
 
 
 
 
+function countEmployees(array,keyword){
+    let count=0
+        for (let i = 0; i < array.length; i++) {
+           if (array[i].id==array[i].id) {
+            count++
+            } 
+        }
+        return count;
+        
+    }
+    
+    console.log(countEmployees(employees))
 
 
 
 
+    function calculateAverageAge(array,keyword){
+        let aver=0;
+            for (let i = 0; i < array.length; i++) {
+               aver+=array[i].age 
+                
+            }
+        
+            return aver/array.length
+        
+          }
+        
+          console.log(calculateAverageAge(employees))
 
 

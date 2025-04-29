@@ -501,7 +501,7 @@ const employees = [
       age: 40,
       department: "Développement",
       position: "CTO",
-      salary: 95000,
+      salary: 950000,
       skills: ["Technical Strategy", "Innovation", "Team Building"],
       joinDate: "2014-02-05",
       email: "paul.leclercq@company.com",
@@ -751,4 +751,4 @@ const employees = [
     }
   ];
 
- 
+  
