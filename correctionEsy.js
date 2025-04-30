@@ -151,6 +151,38 @@ console.log(getUniqueDepartments(employees))
 
 
 
+function countEmployees(array,keyword){
+  let count=0
+      for (let i = 0; i < array.length; i++) {
+         if (array[i].id==array[i].id) {
+          count++
+          } 
+      }
+      return count;
+      
+  }
+  
+  console.log(countEmployees(employees))
+
+
+
+
+  function calculateAverageAge(array,keyword){
+      let aver=0;
+          for (let i = 0; i < array.length; i++) {
+             aver+=array[i].age 
+              
+          }
+      
+          return aver/array.length
+      
+        }
+      
+        console.log(calculateAverageAge(employees))
+
+
+
+
 
 
 // 10

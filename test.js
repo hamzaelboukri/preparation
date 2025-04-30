@@ -750,4 +750,22 @@ const employees = [
       languages: ["French"]
     }
   ];
- 
+
+  function calculateTotalSalaryByDepartment(employees) {
+    const salaries = {};
+    
+    for (let i = 0; i < employees.length; i++) {
+      const employee = employees[i];
+      const { department, salary } = employee;
+      
+      if (salaries[department]) {
+        salaries[department] += salary;
+      } else {
+        salaries[department] = salary;
+      }
+    }
+    
+    return salaries;
+  }
+
+  console.log(calculateTotalSalaryByDepartment(employees))

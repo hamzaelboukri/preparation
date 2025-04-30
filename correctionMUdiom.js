@@ -184,3 +184,87 @@ return maxSkill;
 console.log(getMostCommonSkill(employees));
 
 
+// 19
+function getHighEarningEmployees(array,keyword){
+    let tab=[];
+    
+  for (let i = 0; i < array.length; i++) {
+  if (array[i].salary>keyword) {
+    tab.push(array[i])
+  }
+    }
+  return tab;
+  }
+  console.log(getHighEarningEmployees(employees,60000));
+
+
+
+
+
+
+
+
+
+
+//   20
+
+
+
+function getLongestServingEmployee(array){
+    let teb=[];
+    for (let i = 0; i < array.length; i++) {
+     for (let j = i+1; j < array.length; j++) {
+      if (array[i].joinDate>array[j].joinDate) {
+        let temp=array[i]
+        array[i]=array[j]
+        array[j]=temp
+      }
+     }   
+    }
+    tab=array[0]
+    return tab
+  }
+  console.log(getLongestServingEmployee(employees))
+
+
+//   not work
+
+
+function countEmployeesByDepartment(array){
+    let tab=[]
+    let  check =0;
+    for (let i = 0; i < array.length; i++) {
+      for (let j = i+1; j < array.length; j++) {
+        if (array[i].department===array[j].department) {
+          count ++
+        }
+       
+      }
+      
+    }
+    tab=count
+    return tab
+    }
+    console.log(countEmployeesByDepartment(employees));
+
+
+
+    
+  function countEmployeesByDepartment(array) {
+    let counts = {};
+    
+    for (let i = 0; i < array.length; i++) {
+      let department = array[i].department;
+      
+     
+      if (counts[department]) {
+        counts[department]++;
+      } else {
+        counts[department] = 1;
+      }
+    }
+    
+    return counts;
+  }
+  console.log(countEmployeesByDepartment(employees))
+  
