@@ -266,5 +266,7 @@ function countEmployeesByDepartment(array){
     
     return counts;
   }
+
+  
   console.log(countEmployeesByDepartment(employees))
   

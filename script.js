@@ -160,34 +160,76 @@
 
 
 
-const items = [
-    { category: 'fruit', name: 'apple' },
-    { category: 'fruit', name: 'banana' },
-    { category: 'vegetable', name: 'carrot' }
-  ];
-//   console.log(groupByCategory(items)); 
-//   { 
-// fruit: [{ category: 'fruit', name: 'apple' }, 
-//   { category: 'fruit', name: 'banana' }],
-//    vegetable: [{ category: 'vegetable', name: 'carrot' }] }
+// const items = [
+//     { category: 'fruit', name: 'apple' },
+//     { category: 'fruit', name: 'banana' },
+//     { category: 'vegetable', name: 'carrot' }
+//   ];
+// //   console.log(groupByCategory(items)); 
+// //   { 
+// // fruit: [{ category: 'fruit', name: 'apple' }, 
+// //   { category: 'fruit', name: 'banana' }],
+// //    vegetable: [{ category: 'vegetable', name: 'carrot' }] }
 
 
 
-function getfruit(array,keyword){
-    let fruit=[]
-    let vegetable=[]
-    let itemss=[]
+// function getfruit(array,keyword){
+//     let fruit=[]
+//     let vegetable=[]
+//     let itemss=[]
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i].category===keyword) {
+//             fruit.push(array[i])
+//         }
+//         else{
+//             vegetable.push(array[i])
+//         }
+//     }
+//     itemss.push(fruit,vegetable)
+//    return itemss ;
+// }
+// console.log(getfruit(items,"fruit"))
+
+
+// let word="hello";
+
+// function namew(arr){
+//   let obje={}
+//   for (var i = 0; i<arr.length; i++ ) {
+//    let char=arr[i];
+//    if (obje[char]) {
+//      obje[char]++;
+//    }
+   
+//    else
+//    obje[char]=1;
+//   }
+  
+//   return obje;
+// }
+
+// console.log(namew(word))
+
+
+let tab=[1,2,3]
+
+let tab1=[2,4,5,6,7,8,9,3,2,1]
+
+let nams=true
+function arr(array,array1){
     for (let i = 0; i < array.length; i++) {
-        if (array[i].category===keyword) {
-            fruit.push(array[i])
+       for (let j = 0; j < array1.length; j++) {
+        if (array[i]===array1[j]) {
+            nams=true
+            
         }
-        else{
-            vegetable.push(array[i])
-        }
+        else 
+        nams=false
+        
+       }
     }
-    itemss.push(fruit,vegetable)
-   return itemss ;
+    return nams
+
 }
-console.log(getfruit(items,"fruit"))
 
-
+console.log(nams)

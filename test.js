@@ -751,21 +751,22 @@ const employees = [
     }
   ];
 
-  function calculateTotalSalaryByDepartment(employees) {
-    const salaries = {};
-    
-    for (let i = 0; i < employees.length; i++) {
-      const employee = employees[i];
-      const { department, salary } = employee;
-      
-      if (salaries[department]) {
-        salaries[department] += salary;
-      } else {
-        salaries[department] = salary;
-      }
-    }
-    
-    return salaries;
+ 
+function getUniqueDepartments(array){
+  let Unique=[];
+  for (let i = 0; i < array.length; i++) {
+      let count=0 ;
+   for (let j = i+1; j < array.length; j++) {
+    if (array[i].department===array[j].department) {
+      count++
+      break;
+    }  
+   }
+   if (count===0) {
+      Unique.push(array[i].department)   
   }
+  }
+  return Unique;
+}
 
-  console.log(calculateTotalSalaryByDepartment(employees))
+console.log(getUniqueDepartments(employees))

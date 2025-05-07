@@ -46,3 +46,4 @@ class Mage extends Personnage {
         return (int) ($this->force * 1.5); 
     }
 }
+
